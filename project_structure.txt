@@ -1,0 +1,98 @@
+.
+├── data
+│   ├── processed
+│   │   ├── eda_amount_by_fraud.png
+│   │   ├── eda_amount_distribution.png
+│   │   ├── eda_class_distribution.png
+│   │   ├── eda_null_rates.png
+│   │   ├── eda_summary.json
+│   │   ├── eda_temporal.png
+│   │   ├── features_train.parquet
+│   │   ├── features_val.parquet
+│   │   ├── model_feature_importance.png
+│   │   ├── test_features.parquet
+│   │   └── train_features.parquet
+│   └── raw
+│       ├── baf
+│       │   ├── Base.csv
+│       │   ├── Variant I.csv
+│       │   ├── Variant II.csv
+│       │   ├── Variant III.csv
+│       │   ├── Variant IV.csv
+│       │   └── Variant V.csv
+│       ├── ieee-fraud-detection
+│       │   ├── sample_submission.csv
+│       │   ├── test_identity.csv
+│       │   ├── test_transaction.csv
+│       │   ├── train_identity.csv
+│       │   └── train_transaction.csv
+│       └── paysim.csv
+├── models
+│   ├── lgbm_baseline_ieee.pkl
+│   ├── lgbm_baseline.pkl
+│   ├── lightgbmmodel.pkl
+│   └── lstmmodel.pt
+├── notebooks
+│   ├── 01_eda.ipynb
+│   ├── 02_features.ipynb
+│   ├── 03_lightgbm.ipynb
+│   ├── 04_lstm.ipynb
+│   └── 05_evaluation.ipynb
+├── other docs
+│   ├── day1_progress_report.md
+│   ├── day2_progress_report.md
+│   ├── day3_progress_report.md
+│   ├── day4_progress_report.md
+│   ├── day5_progress_report.md
+│   ├── fraud-shield-doc.md
+│   ├── USM VHack Implementation Plan.md
+│   └── USM VHack Implementation Plan v2.0.md
+├── project_structure.txt
+├── README.md
+├── requirements.txt
+├── scripts
+│   ├── evaluate.py
+│   ├── seed_demo_data.py
+│   └── train.py
+├── src
+│   ├── api
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── routes.py
+│   │   └── schemas.py
+│   ├── entities
+│   │   ├── __init__.py
+│   │   ├── scoring_result.py
+│   │   ├── transaction.py
+│   │   └── user_profile.py
+│   ├── features
+│   │   ├── feature_engineer.py
+│   │   ├── geo_velocity.py
+│   │   ├── __init__.py
+│   │   └── validators.py
+│   ├── models
+│   │   ├── base_model.py
+│   │   ├── fusion_model.py
+│   │   ├── __init__.py
+│   │   ├── lightgbm_model.py
+│   │   └── lstm_model.py
+│   ├── services
+│   │   ├── data_processor.py
+│   │   ├── decision_engine.py
+│   │   ├── explanation_service.py
+│   │   ├── __init__.py
+│   │   ├── privacy_guard.py
+│   │   └── risk_scoring_service.py
+│   └── utils
+│       ├── config.py
+│       ├── __init__.py
+│       ├── logger.py
+│       ├── metrics.py
+│       └── serializer.py
+└── tests
+    ├── test_api.py
+    ├── test_decision_engine.py
+    ├── test_feature_engineer.py
+    └── test_privacy_guard.py
+
+18 directories, 78 files
